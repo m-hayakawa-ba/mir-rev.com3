@@ -11,12 +11,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                     list-style-type: none;
                 "
         >
-            <li>
-                <Link
-                    :href="route('welcome')"
-                    :class="{ active: $page.url === route('welcome', [], false) }"    
-                >Welcome</Link>
-            </li>
+            <!-- 
             <li>
                 <Link
                     :href="route('about')"
@@ -28,7 +23,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                     :href="route('game')"
                     :class="{ active: $page.url === route('game', [], false) }"    
                 >Game</Link>
-            </li>
+            </li> -->
         </ul>
     </nav>
 </template>

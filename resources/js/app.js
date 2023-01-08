@@ -16,5 +16,4 @@ createInertiaApp({
             .mixin({ methods: { route } })
             .mount(el);
     },
-    title: (title) => `${title}｜テストアプリケーション`,
 });

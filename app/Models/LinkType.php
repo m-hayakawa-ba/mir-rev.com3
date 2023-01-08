@@ -17,4 +17,12 @@ class LinkType extends Model
     protected $fillable = [
         'name',
     ];
+
+    /**
+     * リレーション
+     */
+    Public function links()
+    {
+        return $this->hasMany('App\Models\Link');
+    }
 }

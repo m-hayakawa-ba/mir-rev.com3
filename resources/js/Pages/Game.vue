@@ -6,31 +6,31 @@
         <link rel="canonical" href={ APP_URL + "/game" } /> 
       </Helmet> -->
     
-        <!-- メインコンテンツ -->
-        <div class="main-window__wrap">
-            <div class="main-window__inner">
-        
-                <!-- ゲームリストの表示 -->
-                <ul>
-                    <li v-for="game in games" class="game__item-wrap">
-                        <a class="game__item-image image-link gtm-game_link" :href="game.link_path" :data-gtm="game.name">
-                            <img :src="game.thumbnail_path" />
-                        </a>
-                        <div class="game__item-text-wrap">
-                        <a class="game__item-title text-link gtm-game_link" :href="game.link_path" :data-gtm="game.name">
-                            {{ game.name }}({{ game.game_status_name }})
-                        </a>
-                        <div class="game__item-caption">
-                            {{ game.description }}
-                        </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- メインコンテンツ -->
+    <div class="main-window__wrap">
+        <div class="main-window__inner">
     
-        <!-- 戻るボタン -->
-        <PreviousButton />
+            <!-- ゲームリストの表示 -->
+            <ul>
+                <li v-for="game in games" class="game__item-wrap">
+                    <a class="game__item-image image-link gtm-game_link" :href="game.link_path" :data-gtm="game.name">
+                        <img :src="game.thumbnail_path" />
+                    </a>
+                    <div class="game__item-text-wrap">
+                    <a class="game__item-title text-link gtm-game_link" :href="game.link_path" :data-gtm="game.name">
+                        {{ game.name }}({{ game.game_status_name }})
+                    </a>
+                    <div class="game__item-caption">
+                        {{ game.description }}
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 戻るボタン -->
+    <PreviousButton />
 </template>
 
 

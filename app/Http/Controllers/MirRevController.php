@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Game;
 use App\Models\History;
+use App\Models\LinkType;
 
 class MirRevController extends Controller
 {
@@ -15,6 +16,7 @@ class MirRevController extends Controller
     function __construct(
         private Game $gameModel,
         private History $historyModel,
+        private LinkType $linkTypeModel,
     ) {
 
     }
@@ -24,10 +26,15 @@ class MirRevController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Index', [
-            "games" => $this->gameModel->orderBy('sort_index')->get(),
-            "histories" => $this->historyModel->orderBy('created_at', 'desc')->get(),
-        ]);
+        //必要なデータを取得
+        $games = $this->gameModel->orderBy('sort_index')->get();
+        $histories = $this->historyModel->orderBy('created_at', 'desc')->get();
+
+        //ビューにデータを渡す
+        return Inertia::render('Index', compact(
+            'games',
+            'histories',
+        ));
     }
 
     /**
@@ -35,9 +42,13 @@ class MirRevController extends Controller
      */
     public function game()
     {
-        return Inertia::render('Game', [
-            "games" => $this->gameModel->orderBy('sort_index')->get(),
-        ]);
+        //必要なデータを取得
+        $games = $this->gameModel->orderBy('sort_index')->get();
+
+        //ビューにデータを渡す
+        return Inertia::render('Game', compact(
+            'games',
+        ));
     }
 
     /**
@@ -45,7 +56,16 @@ class MirRevController extends Controller
      */
     public function link()
     {
-        return Inertia::render('Link');
+        //必要なデータを渡す
+        $link_types = $this->linkTypeModel
+            ->with(['links' => function ($query) {
+                $query->orderBy('sort_index');
+            }])
+            ->get();
+
+        return Inertia::render('Link', compact(
+            'link_types',
+        ));
     }
 
     /**

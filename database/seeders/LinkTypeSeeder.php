@@ -17,7 +17,7 @@ class LinkTypeSeeder extends Seeder
         if (LinkType::count() == 0) {
             LinkType::create([
                 'id'   => config('const.LINK_TYPE_ID.FRIEND'),
-                'name' => 'お友達リンク',
+                'name' => 'ゲーム・お友達リンク',
             ]);
             LinkType::create([
                 'id'   => config('const.LINK_TYPE_ID.MATERIAL'),

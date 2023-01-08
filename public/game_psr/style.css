@@ -1,0 +1,212 @@
+
+body {
+	background-color: #fff0f0;
+	color:#300;
+}
+
+.top-link {
+	font-weight: bold;
+}
+
+/*右画面全体のテーブル*/
+table.main-table {
+	width: 704px;
+	border: 0 #000000;
+	background-color: #efd0c8;
+	text-align: left;
+}
+td.main-td {
+	border: 0 #000000;
+	padding: 32px 2px;
+	text-align: center;
+	font-size: 85%;
+	line-height: 140%;
+}
+
+/*トップ画面・更新履歴のテーブル*/
+table.kou-table {
+	width: 80%;
+}
+td.kou-tdt {
+	border: 0 #000000;
+	padding: 6px 2px;
+	text-align: center;
+	font-size: 90%;
+	font-weight: bold;
+}
+td.kou-tdl {
+	width: 48%;
+	border: 0 #000000;
+	padding: 0px 4px;
+	text-align: right;
+	font-size: 85%;
+}
+td.kou-tdr {
+	width: 52%;
+	border: 0 #000000;
+	padding: 0px 4px;
+	text-align: left;
+	font-size: 85%;
+}
+
+/*トップ画面・「どんなゲーム？」のテーブル*/
+table.donna-table {
+	width: 96%;
+}
+td.donna-td {
+	border: 0 #000000;
+	padding: 16px 0px;
+	text-align: left;
+	font-size: 80%;
+	line-height: 125%;
+}
+
+/*トップ画面・ゲーム概要のテーブル*/
+table.gai-table {
+	width: 90%;
+	border: 2px #550000 solid;
+	border-collapse: collapse;
+}
+td.gai-td1 {
+	border: 1px #550000 solid;
+	padding: 2px;
+	font-size: 85%;
+	text-align: center;
+	background-color: #e8b8aa;
+}
+td.gai-td2 {
+	border: 1px #550000 solid;
+	padding: 2px;
+	font-size: 85%;
+	text-align: center;
+	background-color: #efd0c8;
+}
+
+/*スクリーンショット*/
+.scr1 {
+	width: 280px;
+	height: 232px;
+	vertical-align: bottom;
+}
+.scr2 {
+	width: 40px;
+}
+.scr8 {
+	height: 24px;
+	background-color: #e8a8a0;
+}
+
+/*システム画面の基本テキスト*/
+.systext {
+	font-size: 90%;
+	line-height: 130%;
+}
+.syssub {
+	font-size: 80%;
+	line-height: 135%;
+}
+.sysbtn {
+	font-size: 80%;
+	line-height: 135%;
+	padding: 0px 12px;
+	vertical-align: top;
+}
+.sysparam1 {
+	width: 42px;
+	height: 48px;
+	text-align: center;
+	vertical-align: center;
+}
+.sysparam2 {
+	width: 60px;
+	height: 48px;
+	text-align: center;
+	vertical-align: center;
+	font-size: 160%;
+	font-weight: bold;
+	color:#900;
+}
+.sysparam3 {
+	height: 48px;
+	padding: 0px 8px 0px 8px;
+	vertical-align: center;
+	font-size: 90%;
+	line-height: 130%;
+}
+
+/*ブログ基本テキスト*/
+.blg-wdw1 {
+	width: 624px;
+	height: 4px;
+	margin: 0 auto;
+	background-image: url(blg/wdw1.jpg);
+	background-repeat: no-repeat;
+}
+.blg-wdw2 {
+	width: 624px;
+	margin: 0 auto;
+	background-image: url(blg/wdw2.jpg);
+	background-repeat: repeat-y;
+}
+.blg-wdw3 {
+	width: 624px;
+	height: 8px;
+	margin: 0 auto;
+	background-image: url(blg/wdw3.jpg);
+	background-repeat: no-repeat;
+}
+.blg-table {
+	width: 560;
+	border-collapse: collapse;
+}
+.blg-title {
+	padding: 24px 0px 0px 16px;
+	color: #5d2313;
+	font-size: 125%;
+	font-weight: bold;
+}
+.blg-line {
+	padding: 0px;
+}
+.blg-date {
+	padding: 2px 12px 0px 0px;
+	text-align: right;
+	color: #5f372c;
+	font-size: 80%;
+}
+.blg-main {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	padding: 28px 40px;
+	color: #42241b;
+	font-size: 90%;
+	line-height: 140%;
+}
+.blg-keyword {
+	font-weight: bold;
+}
+
+.dai {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.keyword {
+	font-weight: bold;
+	color:#900;
+}
+
+div.menu	{	position: relative;}
+a.menu-bg	{	position: absolute;				left: 50%;	margin-left: -118px;}
+a.menu-sel0	{	position: absolute;	top: 26px;	left: 50%;	margin-left: -18px;	}
+a.menu-sel1	{	position: absolute;	top: 64px;	left: 50%;	margin-left: -104px;}
+a.menu-sel2	{	position: absolute;	top: 112px;	left: 50%;	margin-left: -104px;}
+a.menu-sel3	{	position: absolute;	top: 160px;	left: 50%;	margin-left: -104px;}
+a.menu-sel4	{	position: absolute;	top: 208px;	left: 50%;	margin-left: -104px;}
+a.menu-sel5	{	position: absolute;	top: 256px;	left: 50%;	margin-left: -104px;}
+a.menu-sel6	{	position: absolute;	top: 304px;	left: 50%;	margin-left: -104px;}
+a.menu-sel7	{	position: absolute;	top: 352px;	left: 50%;	margin-left: -104px;}
+a.menu-sel8	{	position: absolute;	top: 400px;	left: 50%;	margin-left: -104px;}
+a.menu-sel9	{	position: absolute;	top: 448px;	left: 50%;	margin-left: -104px;}
+a.menu-sela	{	position: absolute;	top: 506px;	left: 50%;	margin-left: -18px;	}
+

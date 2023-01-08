@@ -44,7 +44,7 @@
                 <div>
                     <div class="index__information__caption">
                         <span>管理人 ＭＩＲ</span><br />
-                        <Link href="/profile" class="text-link">・プロフィール</Link><br />
+                        <Link :href="route('profile')" class="text-link">・プロフィール</Link><br />
                         <a href="https://ws.formzu.net/fgen/S27906946/" class="text-link" target="blank">・連絡先</a>
                     </div>
                 </div>
@@ -89,6 +89,7 @@
 
 <script>
 import {usePage} from "@inertiajs/inertia-vue3";
+import { Link } from "@inertiajs/inertia-vue3";
 import moment from 'moment';
 export default{
 
@@ -98,6 +99,11 @@ export default{
             games:     usePage().props.value.games,
             histories: usePage().props.value.histories,
         };
+    },
+
+    //ファイル内で使用するコンポーネント
+    components: {
+        Link,
     },
 
     //コンポーネント内で使用するメソッド

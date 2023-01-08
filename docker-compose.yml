@@ -22,7 +22,7 @@ services:
   db:
     image: mariadb:10.4.13
     environment:
-      MYSQL_DATABASE: local_mirrev_com
+      MYSQL_DATABASE: local_mir_rev_com
       MYSQL_USER: user
       MYSQL_PASSWORD: passuser
       MYSQL_ROOT_PASSWORD: passroot

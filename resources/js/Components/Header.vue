@@ -20,7 +20,7 @@
                 リンク
             </div>
         </Link>
-        <a href="https://tirliss.wordpress.com/" class="header__link image-link" target="blank">
+        <a href="https://blog.mir-rev.com/" class="header__link image-link" target="blank">
             <div>
                 ブログ
             </div>

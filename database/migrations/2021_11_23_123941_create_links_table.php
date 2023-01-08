@@ -16,13 +16,13 @@ class CreateLinksTable extends Migration
         Schema::create('links', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255)->comment('サイト名');
-            $table->string('link_type', 255)->comment('テキストで分類したリンクの種類');
+            $table->foreignId('link_type_id')->comment('テキストで分類したリンクの種類id')->constrained();
             $table->string('link_url', 255)->comment('リンク先のURL');
-            $table->string('thumbnail_url', 255)->comment('サムネイルのURL');
+            $table->string('thumbnail_path', 255)->comment('サムネイルのパス');
             $table->string('description', 1023)->comment('リンク先の簡単な説明');
-            $table->boolean('is_display')->default(1)->comment('リンクを表示するかどうか');
-            $table->integer('sort_number')->default(1)->comment('並び順');
+            $table->integer('sort_index')->default(1)->comment('並び順');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

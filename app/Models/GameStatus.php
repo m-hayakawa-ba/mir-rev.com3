@@ -2,25 +2,19 @@
 
 namespace App\Models;
 
-use App\Casts\DateTimeFormat;
-use App\Casts\NlToBr;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class History extends Model
+class GameStatus extends Model
 {
     use HasFactory;
-    
+
+    public $timestamps = false;
+
     /**
      * カラムの設定
      */
     protected $fillable = [
-        'content',
-        'created_at',
-        'updated_at',
-    ];
-    protected $hidden = [
-        'updated_at',
-        'deleted_at',
+        'name',
     ];
 }

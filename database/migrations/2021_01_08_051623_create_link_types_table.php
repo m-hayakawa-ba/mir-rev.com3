@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHistoriesTable extends Migration
+class CreateLinkTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('histories', function (Blueprint $table) {
+        Schema::create('link_types', function (Blueprint $table) {
             $table->id();
-            $table->text('content')->comment('更新履歴の内容');
-            $table->timestamps();
+            $table->string('name')->comment('お友達リンク、素材リンク、などのリンクの種類名');
         });
     }
 
@@ -27,6 +26,6 @@ class CreateHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('histories');
+        Schema::dropIfExists('link_types');
     }
 }

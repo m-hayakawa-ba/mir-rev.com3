@@ -1,0 +1,31 @@
+<?xml version=”1.0″ encoding=”UTF-8″?>
+<urlset xmlns=”http://www.sitemaps.org/schemas/sitemap/0.9″>
+<url>
+<loc>https://mir-rev.com</loc>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://mir-rev.com/game</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mir-rev.com/link</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://mir-rev.com/profile</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://mir-rev.com/game_psr/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mir-rev.com/game_tir/</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://mir-rev.com/game_onm/</loc>
+<priority>0.8</priority>
+</url>
+</urlset>

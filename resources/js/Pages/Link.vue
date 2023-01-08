@@ -1,10 +1,11 @@
 <template>
-    <!-- head情報
-      <Helmet>
+
+    <!-- HEAD情報 -->
+    <Head>
         <title>MIR_Rev.｜おすすめリンク</title>
-        <meta name="description" content="お友達のリンクや、ゲーム制作に便利な素材サイトなどのリンク集です。"></meta>
-        <link rel="canonical" href={ APP_URL + "/link" } /> 
-      </Helmet> -->
+        <meta head-key="description" name="description" content="お友達のリンクや、ゲーム制作に便利な素材サイトなどのリンク集です。" />
+        <link rel="canonical" :href="route('link')" /> 
+    </Head>
     
     <!-- メインコンテンツ -->
     <div class="main-window__wrap">
@@ -55,7 +56,7 @@
 
 
 <script>
-    import {usePage} from "@inertiajs/inertia-vue3";
+    import {usePage, Head} from "@inertiajs/inertia-vue3";
     import PreviousButton from "../Components/PreviousButton.vue";
     export default{
 
@@ -68,6 +69,7 @@
 
         //ファイル内で使用するコンポーネント
         components: {
+            Head,
             PreviousButton,
         },
     }

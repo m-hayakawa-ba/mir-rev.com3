@@ -19765,6 +19765,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   //ファイル内で使用するコンポーネント
   components: {
+    Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Head,
     PreviousButton: _Components_PreviousButton_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
@@ -19798,6 +19799,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   //ファイル内で使用するコンポーネント
   components: {
+    Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Head,
     Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link
   },
   //コンポーネント内で使用するメソッド
@@ -19834,6 +19836,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   //ファイル内で使用するコンポーネント
   components: {
+    Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Head,
     PreviousButton: _Components_PreviousButton_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
@@ -19851,12 +19854,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Components_PreviousButton_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Components/PreviousButton.vue */ "./resources/js/Components/PreviousButton.vue");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _Components_PreviousButton_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/PreviousButton.vue */ "./resources/js/Components/PreviousButton.vue");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   //ファイル内で使用するコンポーネント
   components: {
-    PreviousButton: _Components_PreviousButton_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Head,
+    PreviousButton: _Components_PreviousButton_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -20034,38 +20040,58 @@ __webpack_require__.r(__webpack_exports__);
 var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-1deb7a1b"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
-var _hoisted_1 = {
+var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("title", null, "MIR_Rev.｜配布ゲーム一覧", -1 /* HOISTED */);
+});
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
+    "head-key": "description",
+    name: "description",
+    content: "制作したゲームソフトの一覧ページです。無料で配布されているゲームソフトもあります。"
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_3 = ["href"];
+var _hoisted_4 = {
   "class": "main-window__wrap"
 };
-var _hoisted_2 = {
+var _hoisted_5 = {
   "class": "main-window__inner"
 };
-var _hoisted_3 = {
+var _hoisted_6 = {
   "class": "game__item-wrap"
 };
-var _hoisted_4 = ["href", "data-gtm"];
-var _hoisted_5 = ["src"];
-var _hoisted_6 = {
+var _hoisted_7 = ["href", "data-gtm"];
+var _hoisted_8 = ["src"];
+var _hoisted_9 = {
   "class": "game__item-text-wrap"
 };
-var _hoisted_7 = ["href", "data-gtm"];
-var _hoisted_8 = {
+var _hoisted_10 = ["href", "data-gtm"];
+var _hoisted_11 = {
   "class": "game__item-caption"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
   var _component_PreviousButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PreviousButton");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" head情報\r\n      <Helmet>\r\n        <title>MIR_Rev.｜配布ゲーム一覧</title>\r\n        <meta name=\"description\" content=\"制作したゲームソフトの一覧ページです。無料で配布されているゲームソフトもあります。\"></meta>\r\n        <link rel=\"canonical\" href={ APP_URL + \"/game\" } /> \r\n      </Helmet> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" メインコンテンツ "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ゲームリストの表示 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.games, function (game) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" HEAD情報 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_1, _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("link", {
+        rel: "canonical",
+        href: _ctx.route('game')
+      }, null, 8 /* PROPS */, _hoisted_3)];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" メインコンテンツ "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ゲームリストの表示 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.games, function (game) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       "class": "game__item-image image-link gtm-game_link",
       href: game.link_path,
       "data-gtm": game.name
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
       src: game.thumbnail_path
-    }, null, 8 /* PROPS */, _hoisted_5)], 8 /* PROPS */, _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    }, null, 8 /* PROPS */, _hoisted_8)], 8 /* PROPS */, _hoisted_7), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       "class": "game__item-title text-link gtm-game_link",
       href: game.link_path,
       "data-gtm": game.name
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.name) + "(" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.game_status_name) + ") ", 9 /* TEXT, PROPS */, _hoisted_7), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.description), 1 /* TEXT */)])]);
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.name) + "(" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.game_status_name) + ") ", 9 /* TEXT, PROPS */, _hoisted_10), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.description), 1 /* TEXT */)])]);
   }), 256 /* UNKEYED_FRAGMENT */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" 戻るボタン "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PreviousButton)], 64 /* STABLE_FRAGMENT */);
 }
 
@@ -20088,6 +20114,17 @@ var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-3655eff9"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
 var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("title", null, "MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^", -1 /* HOISTED */);
+});
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
+    "head-key": "description",
+    name: "description",
+    content: "同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。"
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_3 = ["href"];
+var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     "class": "index__psr-wrap image-link gtm-game_link",
     href: "/game_psr",
@@ -20101,7 +20138,7 @@ var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
     "class": "sp-only"
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("開発中です！！！ ")])], -1 /* HOISTED */);
 });
-var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "index__tir-wrap"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -20115,7 +20152,7 @@ var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
     allowFullScreen: ""
   })])], -1 /* HOISTED */);
 });
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "index__tir-caption"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
@@ -20126,21 +20163,21 @@ var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
     "class": "sp-only"
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("フリーソフト配布中！ ")])], -1 /* HOISTED */);
 });
-var _hoisted_4 = {
+var _hoisted_7 = {
   "class": "index__2column"
 };
-var _hoisted_5 = {
+var _hoisted_8 = {
   "class": "index__1st-column"
 };
-var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "index__content-title"
   }, "● サイト情報 ●", -1 /* HOISTED */);
 });
-var _hoisted_7 = {
+var _hoisted_10 = {
   "class": "index__content-main index__information mb20"
 };
-var _hoisted_8 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_11 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "index__information__iamge"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -20148,63 +20185,72 @@ var _hoisted_8 = /*#__PURE__*/_withScopeId(function () {
     alt: "管理人MIR イメージ画像"
   })], -1 /* HOISTED */);
 });
-var _hoisted_9 = {
+var _hoisted_12 = {
   "class": "index__information__caption"
 };
-var _hoisted_10 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "管理人 ＭＩＲ", -1 /* HOISTED */);
 });
-var _hoisted_11 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
 });
-var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
 });
-var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "https://ws.formzu.net/fgen/S27906946/",
     "class": "text-link",
     target: "blank"
   }, "・連絡先", -1 /* HOISTED */);
 });
-var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "index__content-title"
   }, "● 更新履歴 ●", -1 /* HOISTED */);
 });
-var _hoisted_15 = {
+var _hoisted_18 = {
   "class": "index__content-main mb20"
 };
-var _hoisted_16 = {
+var _hoisted_19 = {
   "class": "index__history"
 };
-var _hoisted_17 = ["innerHTML"];
-var _hoisted_18 = {
+var _hoisted_20 = ["innerHTML"];
+var _hoisted_21 = {
   "class": "index__2nd-column"
 };
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_22 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "index__content-title"
   }, "● ゲームコンテンツ ●", -1 /* HOISTED */);
 });
-var _hoisted_20 = {
+var _hoisted_23 = {
   "class": "index__content-main"
 };
-var _hoisted_21 = {
+var _hoisted_24 = {
   "class": "index__item-wrap"
 };
-var _hoisted_22 = ["href", "data-gtm"];
-var _hoisted_23 = ["src", "alt"];
-var _hoisted_24 = {
+var _hoisted_25 = ["href", "data-gtm"];
+var _hoisted_26 = ["src", "alt"];
+var _hoisted_27 = {
   "class": "index__item-text-wrap"
 };
-var _hoisted_25 = ["href", "data-gtm"];
-var _hoisted_26 = {
+var _hoisted_28 = ["href", "data-gtm"];
+var _hoisted_29 = {
   "class": "index__item-caption"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" head情報\r\n    <Helmet>\r\n    <title>MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^</title>\r\n    <meta name=\"description\" content=\"同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。\"></meta>\r\n    <link rel=\"canonical\" href={ APP_URL } /> \r\n    </Helmet> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" プリンセスシェイド リビジョン 紹介 "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ティルキッス 紹介 "), _hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ゲーム紹介とサイト情報・更新履歴 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" サイト情報と更新履歴 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" HEAD情報 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_1, _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("link", {
+        rel: "canonical",
+        href: _ctx.route('index')
+      }, null, 8 /* PROPS */, _hoisted_3)];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" プリンセスシェイド リビジョン 紹介 "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ティルキッス 紹介 "), _hoisted_5, _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ゲーム紹介とサイト情報・更新履歴 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" サイト情報と更新履歴 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: _ctx.route('profile'),
     "class": "text-link"
   }, {
@@ -20212,23 +20258,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("・プロフィール")];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href"]), _hoisted_12, _hoisted_13])])]), _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.histories, function (history) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.format(history.created_at)), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  }, 8 /* PROPS */, ["href"]), _hoisted_15, _hoisted_16])])]), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.histories, function (history) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.format(history.created_at)), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
       innerHTML: history.content
-    }, null, 8 /* PROPS */, _hoisted_17)])]);
-  }), 256 /* UNKEYED_FRAGMENT */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ゲーム紹介 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.games, function (game) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    }, null, 8 /* PROPS */, _hoisted_20)])]);
+  }), 256 /* UNKEYED_FRAGMENT */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ゲーム紹介 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.games, function (game) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       "class": "index__item-image image-link gtm-game_link",
       href: game.link_path,
       "data-gtm": game.name
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
       src: game.thumbnail_path,
       alt: game.name
-    }, null, 8 /* PROPS */, _hoisted_23)], 8 /* PROPS */, _hoisted_22), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    }, null, 8 /* PROPS */, _hoisted_26)], 8 /* PROPS */, _hoisted_25), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       "class": "index__item-title text-link gtm-game_link",
       href: game.link_path,
       "data-gtm": game.name
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.name), 9 /* TEXT, PROPS */, _hoisted_25), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.description), 1 /* TEXT */)])]);
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.name), 9 /* TEXT, PROPS */, _hoisted_28), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(game.description), 1 /* TEXT */)])]);
   }), 256 /* UNKEYED_FRAGMENT */))])])])])], 64 /* STABLE_FRAGMENT */);
 }
 
@@ -20250,48 +20296,68 @@ __webpack_require__.r(__webpack_exports__);
 var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-62e6cbba"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
-var _hoisted_1 = {
+var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("title", null, "MIR_Rev.｜おすすめリンク", -1 /* HOISTED */);
+});
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
+    "head-key": "description",
+    name: "description",
+    content: "お友達のリンクや、ゲーム制作に便利な素材サイトなどのリンク集です。"
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_3 = ["href"];
+var _hoisted_4 = {
   "class": "main-window__wrap"
 };
-var _hoisted_2 = {
+var _hoisted_5 = {
   "class": "main-window__inner"
 };
-var _hoisted_3 = {
+var _hoisted_6 = {
   "class": "link__wrap"
 };
-var _hoisted_4 = {
+var _hoisted_7 = {
   "class": "link__h2"
 };
-var _hoisted_5 = {
+var _hoisted_8 = {
   "class": "link__item-wrap"
 };
-var _hoisted_6 = ["href"];
-var _hoisted_7 = ["src"];
-var _hoisted_8 = {
+var _hoisted_9 = ["href"];
+var _hoisted_10 = ["src"];
+var _hoisted_11 = {
   "class": "link__item-text-wrap"
 };
-var _hoisted_9 = ["href"];
-var _hoisted_10 = {
+var _hoisted_12 = ["href"];
+var _hoisted_13 = {
   "class": "link__item-caption"
 };
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"link__wrap\" data-v-62e6cbba><h2 class=\"link__h2\" data-v-62e6cbba>当サイトへのリンクについて</h2><div class=\"link__announce\" data-v-62e6cbba> 当サイトはリンクフリーです。<br class=\"sp-only\" data-v-62e6cbba>バナーは以下の物をお使いください。 </div><div class=\"link__banner\" data-v-62e6cbba><img src=\"/image/banner1.jpg\" data-v-62e6cbba><img src=\"/image/banner2.jpg\" data-v-62e6cbba><img src=\"/image/banner3.jpg\" data-v-62e6cbba></div></div>", 1);
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"link__wrap\" data-v-62e6cbba><h2 class=\"link__h2\" data-v-62e6cbba>当サイトへのリンクについて</h2><div class=\"link__announce\" data-v-62e6cbba> 当サイトはリンクフリーです。<br class=\"sp-only\" data-v-62e6cbba>バナーは以下の物をお使いください。 </div><div class=\"link__banner\" data-v-62e6cbba><img src=\"/image/banner1.jpg\" data-v-62e6cbba><img src=\"/image/banner2.jpg\" data-v-62e6cbba><img src=\"/image/banner3.jpg\" data-v-62e6cbba></div></div>", 1);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
   var _component_PreviousButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PreviousButton");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" head情報\r\n      <Helmet>\r\n        <title>MIR_Rev.｜おすすめリンク</title>\r\n        <meta name=\"description\" content=\"お友達のリンクや、ゲーム制作に便利な素材サイトなどのリンク集です。\"></meta>\r\n        <link rel=\"canonical\" href={ APP_URL + \"/link\" } /> \r\n      </Helmet> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" メインコンテンツ "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンク一覧 "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.link_types, function (link_type) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンクの種類名 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(link_type.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンク詳細 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(link_type.links, function (link) {
-      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" HEAD情報 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_1, _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("link", {
+        rel: "canonical",
+        href: _ctx.route('link')
+      }, null, 8 /* PROPS */, _hoisted_3)];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" メインコンテンツ "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンク一覧 "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.link_types, function (link_type) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンクの種類名 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(link_type.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンク詳細 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(link_type.links, function (link) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
         "class": "link__item-image image-link",
         href: link.link_url,
         target: "blank"
       }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
         src: link.thumbnail_path
-      }, null, 8 /* PROPS */, _hoisted_7)], 8 /* PROPS */, _hoisted_6), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+      }, null, 8 /* PROPS */, _hoisted_10)], 8 /* PROPS */, _hoisted_9), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
         "class": "link__item-name text-link",
         href: link.link_url,
         target: "blank"
-      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(link.name), 9 /* TEXT, PROPS */, _hoisted_9), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(link.description), 1 /* TEXT */)])]);
+      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(link.name), 9 /* TEXT, PROPS */, _hoisted_12), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(link.description), 1 /* TEXT */)])]);
     }), 256 /* UNKEYED_FRAGMENT */))])]);
-  }), 256 /* UNKEYED_FRAGMENT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンクについて "), _hoisted_11])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" 戻るボタン "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PreviousButton)], 64 /* STABLE_FRAGMENT */);
+  }), 256 /* UNKEYED_FRAGMENT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" リンクについて "), _hoisted_14])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" 戻るボタン "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PreviousButton)], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -20312,10 +20378,30 @@ __webpack_require__.r(__webpack_exports__);
 var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-1bdc34e0"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"main-window__wrap\" data-v-1bdc34e0><div class=\"main-window__inner\" data-v-1bdc34e0><div class=\"profile__wrap\" data-v-1bdc34e0><!-- 顔画像 --><div class=\"profile__face\" data-v-1bdc34e0><img src=\"/image/mir.jpg\" alt=\"管理人MIR イメージ画像\" data-v-1bdc34e0></div><!-- 基本情報 --><div class=\"profile__information\" data-v-1bdc34e0><h2 class=\"profile__information__title\" data-v-1bdc34e0> 管理人情報 </h2><div data-v-1bdc34e0><span data-v-1bdc34e0>名前</span><span data-v-1bdc34e0>ＭＩＲ<br class=\"sp-only\" data-v-1bdc34e0>（えむあいあーる）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>出身地</span><span data-v-1bdc34e0>新潟県</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>主な派閥</span><span data-v-1bdc34e0>猫派 ・ インドア派 ・ ビアンカ派</span></div></div><!-- ゲーム情報 --><div class=\"profile__game\" data-v-1bdc34e0><h2 class=\"profile__game__title\" data-v-1bdc34e0> ゲーム履歴 </h2><div data-v-1bdc34e0><span data-v-1bdc34e0>初めて買ってもらったゲーム</span><span data-v-1bdc34e0>スーパーマリオブラザーズ２（ディスクシステム）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>子供の頃好きだったゲーム</span><span data-v-1bdc34e0>ファイアーエムブレム（ＦＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>性の目覚め</span><span data-v-1bdc34e0>アイドル八犬伝（ＦＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>ハマった格ゲー</span><span data-v-1bdc34e0>ヴァンパイアセイヴァー（アーケード）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>シューターになったきっかけ</span><span data-v-1bdc34e0>レイストーム（ＡＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>思い出の全一</span><span data-v-1bdc34e0>斑鳩（ＡＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>大人になっても楽しめるゲーム</span><span data-v-1bdc34e0>逆転裁判（ＧＢＡ）</span></div></div></div></div></div>", 1);
+var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("title", null, "MIR_Rev.｜管理人プロフィール", -1 /* HOISTED */);
+});
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("meta", {
+    "head-key": "description",
+    name: "description",
+    content: "管理人ＭＩＲのプロフィールと秘密です。"
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_3 = ["href"];
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"main-window__wrap\" data-v-1bdc34e0><div class=\"main-window__inner\" data-v-1bdc34e0><div class=\"profile__wrap\" data-v-1bdc34e0><!-- 顔画像 --><div class=\"profile__face\" data-v-1bdc34e0><img src=\"/image/mir.jpg\" alt=\"管理人MIR イメージ画像\" data-v-1bdc34e0></div><!-- 基本情報 --><div class=\"profile__information\" data-v-1bdc34e0><h2 class=\"profile__information__title\" data-v-1bdc34e0> 管理人情報 </h2><div data-v-1bdc34e0><span data-v-1bdc34e0>名前</span><span data-v-1bdc34e0>ＭＩＲ<br class=\"sp-only\" data-v-1bdc34e0>（えむあいあーる）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>出身地</span><span data-v-1bdc34e0>新潟県</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>主な派閥</span><span data-v-1bdc34e0>猫派 ・ インドア派 ・ ビアンカ派</span></div></div><!-- ゲーム情報 --><div class=\"profile__game\" data-v-1bdc34e0><h2 class=\"profile__game__title\" data-v-1bdc34e0> ゲーム履歴 </h2><div data-v-1bdc34e0><span data-v-1bdc34e0>初めて買ってもらったゲーム</span><span data-v-1bdc34e0>スーパーマリオブラザーズ２（ディスクシステム）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>子供の頃好きだったゲーム</span><span data-v-1bdc34e0>ファイアーエムブレム（ＦＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>性の目覚め</span><span data-v-1bdc34e0>アイドル八犬伝（ＦＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>ハマった格ゲー</span><span data-v-1bdc34e0>ヴァンパイアセイヴァー（アーケード）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>シューターになったきっかけ</span><span data-v-1bdc34e0>レイストーム（ＡＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>思い出の全一</span><span data-v-1bdc34e0>斑鳩（ＡＣ）</span></div><div data-v-1bdc34e0><span data-v-1bdc34e0>大人になっても楽しめるゲーム</span><span data-v-1bdc34e0>逆転裁判（ＧＢＡ）</span></div></div></div></div></div>", 1);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
   var _component_PreviousButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PreviousButton");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" head情報\r\n      <Helmet>\r\n        <title>MIR_Rev.｜管理人プロフィール</title>\r\n        <meta name=\"description\" content=\"管理人ＭＩＲのプロフィールと秘密です。\"></meta>\r\n        <link rel=\"canonical\" href={ APP_URL + \"/profile\" } /> \r\n      </Helmet> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" メインコンテンツ "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" 戻るボタン "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PreviousButton)], 64 /* STABLE_FRAGMENT */);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" HEAD情報 "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, null, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_1, _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("link", {
+        rel: "canonical",
+        href: _ctx.route('profile')
+      }, null, 8 /* PROPS */, _hoisted_3)];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" メインコンテンツ "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" 戻るボタン "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PreviousButton)], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),

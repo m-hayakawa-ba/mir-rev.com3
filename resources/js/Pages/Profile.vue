@@ -1,10 +1,11 @@
 <template>
-    <!-- head情報
-      <Helmet>
+
+    <!-- HEAD情報 -->
+    <Head>
         <title>MIR_Rev.｜管理人プロフィール</title>
-        <meta name="description" content="管理人ＭＩＲのプロフィールと秘密です。"></meta>
-        <link rel="canonical" href={ APP_URL + "/profile" } /> 
-      </Helmet> -->
+        <meta head-key="description" name="description" content="管理人ＭＩＲのプロフィールと秘密です。" />
+        <link rel="canonical" :href="route('profile')" /> 
+    </Head>
     
     <!-- メインコンテンツ -->
     <div class="main-window__wrap">
@@ -79,11 +80,13 @@
 
 
 <script>
+    import {Head} from "@inertiajs/inertia-vue3";
     import PreviousButton from "../Components/PreviousButton.vue";
     export default{
 
         //ファイル内で使用するコンポーネント
         components: {
+            Head,
             PreviousButton,
         },
     }

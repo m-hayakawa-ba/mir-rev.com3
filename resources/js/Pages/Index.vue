@@ -1,11 +1,11 @@
 <template>
 
-    <!-- head情報
-    <Helmet>
-    <title>MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^</title>
-    <meta name="description" content="同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。"></meta>
-    <link rel="canonical" href={ APP_URL } /> 
-    </Helmet> -->
+    <!-- HEAD情報 -->
+    <Head>
+        <title>MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^</title>
+        <meta head-key="description" name="description" content="同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。" />
+        <link rel="canonical" :href="route('index')" /> 
+    </Head>
 
     <!-- プリンセスシェイド リビジョン 紹介 -->
     <a class="index__psr-wrap image-link gtm-game_link" href="/game_psr" data-gtm="プリンセスシェイド リビジョン">
@@ -88,31 +88,32 @@
 
 
 <script>
-import {usePage} from "@inertiajs/inertia-vue3";
-import { Link } from "@inertiajs/inertia-vue3";
-import moment from 'moment';
-export default{
+    import {usePage, Head} from "@inertiajs/inertia-vue3";
+    import { Link } from "@inertiajs/inertia-vue3";
+    import moment from 'moment';
+    export default{
 
-    //コンポーネント内で使用する変数
-    data() {
-        return {
-            games:     usePage().props.value.games,
-            histories: usePage().props.value.histories,
-        };
-    },
+        //コンポーネント内で使用する変数
+        data() {
+            return {
+                games:     usePage().props.value.games,
+                histories: usePage().props.value.histories,
+            };
+        },
 
-    //ファイル内で使用するコンポーネント
-    components: {
-        Link,
-    },
+        //ファイル内で使用するコンポーネント
+        components: {
+            Head,
+            Link,
+        },
 
-    //コンポーネント内で使用するメソッド
-    methods: {
-        format(date) {
-            return moment(date).format('YYYY年M月D日')
+        //コンポーネント内で使用するメソッド
+        methods: {
+            format(date) {
+                return moment(date).format('YYYY年M月D日')
+            }
         }
     }
-}
 </script>
 
 

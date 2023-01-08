@@ -8,12 +8,13 @@
 <script>
     import {usePage} from "@inertiajs/inertia-vue3";
     export default {
-        setup() {
-            const year = usePage().props.value.year;
+
+        //コンポーネント内で使用する変数
+        data() {
             return {
-                year,
-            }
-        }
+                year:  usePage().props.value.year,
+            };
+        },
     };
 </script>
 

@@ -5,29 +5,29 @@
         <!-- サークルロゴ -->
         <Link :href="route('index')" class="header__logo image-link">
             <div>
-            <img src="/image/circlelogo.png" />
+                <img src="/image/circlelogo.png" />
             </div>
         </Link>
 
         <!-- 各種リンクボタン -->
         <Link :href="route('game')" class="header__link image-link">
             <div>
-            ゲーム
+                ゲーム
             </div>
         </Link>
         <Link :href="route('link')" class="header__link image-link">
             <div>
-            リンク
+                リンク
             </div>
         </Link>
         <a href="https://tirliss.wordpress.com/" class="header__link image-link" target="blank">
             <div>
-            ブログ
+                ブログ
             </div>
         </a>
         <a href="https://ws.formzu.net/fgen/S27906946/" class="header__link image-link" target="blank">
             <div>
-            ご連絡
+                ご連絡
             </div>
         </a>
 

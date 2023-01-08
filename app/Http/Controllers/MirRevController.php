@@ -4,15 +4,30 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use App\Models\Game;
+use App\Models\History;
 
 class MirRevController extends Controller
 {
+    /**
+     * コンストラクタ
+     */
+    function __construct(
+        private Game $gameModel,
+        private History $historyModel,
+    ) {
+
+    }
+
     /**
      * トップページ
      */
     public function index()
     {
-        return Inertia::render('Index');
+        return Inertia::render('Index', [
+            "games" => $this->gameModel->all(),
+            "histories" => $this->historyModel->all(),
+        ]);
     }
 
     /**
@@ -20,7 +35,9 @@ class MirRevController extends Controller
      */
     public function game()
     {
-        return Inertia::render('Game');
+        return Inertia::render('Game', [
+            "games" => $this->gameModel->all(),
+        ]);
     }
 
     /**

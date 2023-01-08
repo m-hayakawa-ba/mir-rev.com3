@@ -27,4 +27,23 @@ class Game extends Model
         'updated_at',
         'deleted_at',
     ];
+    protected $appends = [
+        'game_status_name',
+    ];
+
+    /**
+     * リレーション
+     */
+    Public function game_status()
+    {
+        return $this->belongsTo('App\Models\GameStatus');
+    }
+
+    /**
+     * アクセサ
+     */
+    public function getGameStatusNameAttribute()
+    {
+        return $this->game_status->name;
+    }
 }

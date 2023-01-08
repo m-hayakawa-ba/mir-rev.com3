@@ -21,7 +21,7 @@ class GameSeeder extends Seeder
                 'link_path' => '/game_onm',
                 'thumbnail_path' => '/image/banner_onm1.jpg',
                 'description' => '怪しい世界を舞台とした、アクションパズル。プレイヤー様から作っていただいたエディットマップも公開しています。ゲームの紹介ページからダウンロードできます。',
-                'sort_index' => 1,
+                'sort_index' => 3,
             ]);
             Game::create([
                 'name' => 'ティルキッス ～Princess Shade～',
@@ -37,7 +37,7 @@ class GameSeeder extends Seeder
                 'link_path' => '/game_psr',
                 'thumbnail_path' => '/image/banner_psr1.jpg',
                 'description' => '幻想の世界「セルフィア大陸」を舞台とした、弾幕アクションＲＰＧ第二弾。現在鋭意開発中です。',
-                'sort_index' => 3,
+                'sort_index' => 1,
             ]);
         }
     }

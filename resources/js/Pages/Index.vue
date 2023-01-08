@@ -1,72 +1,71 @@
 <template>
-    <div class="content">
 
-        <!-- head情報
-        <Helmet>
-        <title>MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^</title>
-        <meta name="description" content="同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。"></meta>
-        <link rel="canonical" href={ APP_URL } /> 
-        </Helmet> -->
+    <!-- head情報
+    <Helmet>
+    <title>MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^</title>
+    <meta name="description" content="同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。"></meta>
+    <link rel="canonical" href={ APP_URL } /> 
+    </Helmet> -->
 
-        <!-- プリンセスシェイド リビジョン 紹介 -->
-        <a class="index__psr-wrap image-link gtm-game_link" href="/game_psr" data-gtm="プリンセスシェイド リビジョン">
-            <div>
-                <img src="/image/psr.jpg" alt="プリンセスシェイド バナー画像" />
-            </div>
-            <div class="index__psr-caption">
-                弾幕アクションＲＰＧ 第二弾！<br />
-                「プリンセスシェイド リビジョン」<br class="sp-only" />開発中です！！！
-            </div>
+    <!-- プリンセスシェイド リビジョン 紹介 -->
+    <a class="index__psr-wrap image-link gtm-game_link" href="/game_psr" data-gtm="プリンセスシェイド リビジョン">
+        <div>
+            <img src="/image/psr.jpg" alt="プリンセスシェイド バナー画像" />
+        </div>
+        <div class="index__psr-caption">
+            弾幕アクションＲＰＧ 第二弾！<br />
+            「プリンセスシェイド リビジョン」<br class="sp-only" />開発中です！！！
+        </div>
+    </a>
+
+    <!-- ティルキッス 紹介 -->
+    <div class="index__tir-wrap">
+        <div class="index__tir-movie">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/LQeSjsx3N5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
+    </div>
+    <div class="index__tir-caption">
+        <a href="/" class="text-link gtm-game_link" data-gtm="ティルキッス ～Princess Shade～">
+            弾幕アクションＲＰＧ 第一弾！<br />
+            「ティルキッス ～Princess Shade～」<br class="sp-only" />フリーソフト配布中！
         </a>
+    </div>
 
-        <!-- ティルキッス 紹介 -->
-        <div class="index__tir-wrap">
-            <div class="index__tir-movie">
-                <iframe loading="lazy" src="https://www.youtube.com/embed/LQeSjsx3N5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-        </div>
-        <div class="index__tir-caption">
-            <a href="/" class="text-link gtm-game_link" data-gtm="ティルキッス ～Princess Shade～">
-                弾幕アクションＲＰＧ 第一弾！<br />
-                「ティルキッス ～Princess Shade～」<br class="sp-only" />フリーソフト配布中！
-            </a>
-        </div>
+    <!-- ゲーム紹介とサイト情報・更新履歴 -->
+    <div class="index__2column">
 
-        <!-- ゲーム紹介とサイト情報・更新履歴 -->
-        <div class="index__2column">
-
-            <!-- サイト情報と更新履歴 -->
-            <div class="index__1st-column">
-                <div class="index__content-title">● サイト情報 ●</div>
-                <div class="index__content-main index__information mb20">
-                    <div class="index__information__iamge">
-                        <img src="/image/mir.jpg" alt="管理人MIR イメージ画像" />
+        <!-- サイト情報と更新履歴 -->
+        <div class="index__1st-column">
+            <div class="index__content-title">● サイト情報 ●</div>
+            <div class="index__content-main index__information mb20">
+                <div class="index__information__iamge">
+                    <img src="/image/mir.jpg" alt="管理人MIR イメージ画像" />
+                </div>
+                <div>
+                    <div class="index__information__caption">
+                        <span>管理人 ＭＩＲ</span><br />
+                        <Link href="/profile" class="text-link">・プロフィール</Link><br />
+                        <a href="https://ws.formzu.net/fgen/S27906946/" class="text-link" target="blank">・連絡先</a>
                     </div>
-                    <div>
-                        <div class="index__information__caption">
-                            <span>管理人 ＭＩＲ</span><br />
-                            <Link href="/profile" class="text-link">・プロフィール</Link><br />
-                            <a href="https://ws.formzu.net/fgen/S27906946/" class="text-link" target="blank">・連絡先</a>
+                </div>
+            </div>
+            <div class="index__content-title">● 更新履歴 ●</div>
+            <div class="index__content-main mb20">
+                <ul>
+                    <li v-for="history in histories">
+                        <div class="index__history">
+                            <span>{{ format(history.created_at) }}</span>
+                            <p v-html="history.content"></p>
                         </div>
-                    </div>
-                </div>
-                <div class="index__content-title">● 更新履歴 ●</div>
-                <div class="index__content-main mb20">
-                    <ul>
-                        <li v-for="history in histories">
-                            <div class="index__history">
-                                <span>{{ format(history.created_at) }}</span>
-                                <p v-html="history.content"></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                </ul>
             </div>
+        </div>
 
-            <!-- ゲーム紹介 -->
-            <div class="index__2nd-column">
-                <div class="index__content-title">● ゲームコンテンツ ●</div>
-                <div class="index__content-main">
+        <!-- ゲーム紹介 -->
+        <div class="index__2nd-column">
+            <div class="index__content-title">● ゲームコンテンツ ●</div>
+            <div class="index__content-main">
                 <ul>
                     <li v-for="game in games" class="index__item-wrap">
                         <a class="index__item-image image-link gtm-game_link" :href="game.link_path" :data-gtm="game.name">
@@ -84,9 +83,6 @@
                 </ul>
             </div>
         </div>
-
-    </div>
-
     </div>
 </template>
 

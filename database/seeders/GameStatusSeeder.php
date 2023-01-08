@@ -25,7 +25,7 @@ class GameStatusSeeder extends Seeder
             ]);
             GameStatus::create([
                 'id'   => config('const.GAME_STATUS_ID.FREE'),
-                'name' => '無料公開中',
+                'name' => 'フリーソフト',
             ]);
             GameStatus::create([
                 'id'   => config('const.GAME_STATUS_ID.NOPUBLIC'),

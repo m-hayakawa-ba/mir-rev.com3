@@ -234,3 +234,29 @@ ul {
   flex: 1 0 auto;
   padding: 40px 0;
 }
+
+.main-window__wrap {
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #c7a695;
+  border: solid #533221;
+  border-width: 4px 1px;
+  box-shadow: 1px 2px 3px #533221;
+}
+@media screen and (min-width: 768px) {
+  .main-window__wrap {
+    width: 768px;
+  }
+}
+.main-window__inner {
+  padding: 25px 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .main-window__inner {
+    padding: 30px;
+  }
+}

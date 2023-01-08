@@ -25,8 +25,8 @@ class MirRevController extends Controller
     public function index()
     {
         return Inertia::render('Index', [
-            "games" => $this->gameModel->all(),
-            "histories" => $this->historyModel->all(),
+            "games" => $this->gameModel->orderBy('sort_index')->get(),
+            "histories" => $this->historyModel->orderBy('created_at', 'desc')->get(),
         ]);
     }
 
@@ -36,7 +36,7 @@ class MirRevController extends Controller
     public function game()
     {
         return Inertia::render('Game', [
-            "games" => $this->gameModel->all(),
+            "games" => $this->gameModel->orderBy('sort_index')->get(),
         ]);
     }
 

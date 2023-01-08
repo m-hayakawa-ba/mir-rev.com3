@@ -1,3 +1,72 @@
+
+/********************************/
+/*        全体の基本定義        */
+/********************************/
+
+.mt5  {margin-top:  5px}
+.mt10 {margin-top: 10px}
+.mt20 {margin-top: 20px}
+.mt30 {margin-top: 30px}
+.mt40 {margin-top: 40px}
+.mt50 {margin-top: 50px}
+.mt60 {margin-top: 60px}
+.mb5  {margin-bottom:  5px}
+.mb10 {margin-bottom: 10px}
+.mb20 {margin-bottom: 20px}
+.mb30 {margin-bottom: 30px}
+.mb40 {margin-bottom: 40px}
+.mb50 {margin-bottom: 50px}
+.mb60 {margin-bottom: 60px}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+body {
+    height: 100%;
+    color: #222;
+    background-color: #fff6e3;
+}
+#app, #app-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none
+}
+
+.pc-only {
+    display: none;
+    @media screen and (min-width: $break_point) {
+        display: block!important;
+    }
+}
+.sp-only {
+    display: block;
+    @media screen and (min-width: $break_point) {
+        display: none!important;
+    }
+}
+
+.image-link,
+.text-link {
+    transition: 0.2s;
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+
+/********************************/
+/*     全体のサイトデザイン     */
+/********************************/
 .background-pattern {
     background: linear-gradient(45deg, #231111 25%, transparent 25%, transparent 75%, #231111 75%),
                 linear-gradient(45deg, #231111 25%, transparent 25%, transparent 75%, #231111 75%);

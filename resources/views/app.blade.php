@@ -16,8 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/icon.ico" id="favicon">
     <link rel="apple-touch-icon" sizes="256x256" href="/icon.png">
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
-    <script src="{{ mix('/js/app.js') }}" defer></script>
+    <link href="{{ mix('/css/app.css') }}?v=1" rel="stylesheet" />
+    <script src="{{ mix('/js/app.js') }}?v=1" defer></script>
     @inertiaHead
     @routes
 </head>
